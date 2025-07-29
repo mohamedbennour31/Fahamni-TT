@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Structure du Réseau d’Abonné | Fahamni TT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<button id="scrollTopBtn" title="Remonter">⬆</button>
+<body>
+  <header>
+    <button id="darkToggle">🌓 Mode sombre</button>
+    <h1>📡 Fahamni TT</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="reseau.html" class="active">Structure du réseau</a></li>
+        <li><a href="pannes.html">Pannes</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="outils.html">Outils</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>🧠 Structure complète de la ligne d’abonné Tunisie Telecom</h2>
+      <p class="intro-network">
+  Le réseau d'accès de Tunisie Telecom relie chaque abonné à travers plusieurs composants clés : depuis le Backbone national en fibre optique qui assure la liaison entre les grandes villes, jusqu’au Répartiteur Général (NRA) où sont concentrées et gérées les lignes des abonnés. Le signal est ensuite acheminé vers les Sous-Répartiteurs (SR) de quartier, puis vers les Points de Concentration (PC) proches des habitations, avant d’arriver enfin à la prise téléphonique chez l’abonné. Chaque étape joue un rôle essentiel pour garantir la qualité et la continuité du service Internet et téléphonique.
+</p>
+    </section>
+
+    <section class="step">
+      <h3>1. Backbone national</h3>
+      <img src="backbone.jpg" alt="Backbone fibre" />
+      <p>Réseau fibre optique interconnectant les grandes villes et les points d’agrégation. Comprend les câbles sous-marins SEA‑ME‑WE, Didon, Hannibal… :contentReference[oaicite:2]{index=2}</p>
+    </section>
+
+    <section class="step">
+      <h3>2. Répartiteur Général (NRA)</h3>
+      <figure class="network-figure">
+  <img src="répartiteur général.jpg" alt="Répartiteur général / DSLAM" class="network-image" />
+  <figcaption>Répartiteur général / DSLAM</figcaption>
+</figure>
+
+<figure class="network-figure">
+  <img src="rg 2.jpg" alt="Répartiteur général / DSLAM" class="network-image" />
+  <figcaption>Répartiteur général / DSLAM (vue 2)</figcaption>
+</figure>
+
+<figure class="network-figure">
+  <img src="regelette verticale.jpg" alt="reglette verticale" class="network-image" />
+  <figcaption>La réglette verticale , pour la position d'abonné</figcaption>
+</figure>
+
+<figure class="network-figure">
+  <img src="reglette horizontale.jpg" alt="Reglette horizontale" class="network-image" />
+  <figcaption>La reglette horizontale source d'adsl et voix</figcaption>
+</figure>
+
+      <p>Équipement central (DSLAM pour cuivre, OLT pour fibre) situé au niveau du NRA. Gère des réglettes verticales/horizontales et des jarretières .</p>
+    </section>
+
+    <section class="step">
+      <h3>3. Sous-Répartiteur (SR)</h3>
+
+      <figure class="network-figure">
+  <img src="sr.jpg" alt="Sous répartiteur de rue" class="network-image" />
+  <figcaption>Sous répartiteur de rue</figcaption>
+</figure>
+    
+      <p>Armoire publique (SRZ ou SRI) intercalée entre le NRA et le Point de Concentration : elle répartit les liaisons de transport vers les zones ou immeubles.</p>
+    </section>
+
+    <section class="step">
+      <h3>4. Point de Concentration (PC)</h3>
+      <figure class="network-figure">
+  <img src="pointdeconcentration.jpg" alt="Point de Concentration" class="network-image" />
+  <figcaption>Point de Concentration</figcaption>
+</figure>
+      <p>Boîte (souvent 7 ou 14 paires) en façade ou sur poteau. Elle connecte les câbles de distribution aux câbles individuels et facilite la localisation des pannes .</p>
+    </section>
+
+    <section class="step">
+      <h3>5. Câbles de branchement jusqu’à l’abonné</h3>
+      <img src="cable_branchement.jpg" alt="Câble de branchement 5/9" />
+      <p>Chaque abonné est relié via un câble uni-paire (5/9 ou 5/1) du PC à sa prise murale. Ces câbles varient selon usage interne/externe .</p>
+    </section>
+
+    <section>
+      <h2>🔧 Technologies ADSL, Fibre & GPON</h2>
+      <p><strong>ADSL/VDSL :</strong> 
+</p>
+<article class="techno">
+    <h3>ADSL (Asymmetric Digital Subscriber Line)</h3>
+    <p>Technologie xDSL qui utilise les fils de cuivre du réseau téléphonique pour l'accès à Internet.</p>
+    <ul>
+      <li>Débit généralement asymétrique : le débit descendant (téléchargement) est plus rapide que le débit montant (envoi).</li>
+      <li>Débits typiques : jusqu'à 15 Mbit/s en descendant et 1 Mb/s en montant.</li>
+      <li>Couverture large, accessible à la plupart des foyers.</li>
+      <li>Convient pour une utilisation standard d'internet (navigation, emails, etc.).</li>
+    </ul>
+  </article>
+      <p><strong>Fibre (GPON FTTH/FTTB) :</strong> </p>
+      <article class="techno">
+    <h3>VDSL (Very-high-bit-rate Digital Subscriber Line)</h3>
+    <p>Technologie xDSL qui améliore les performances de l'ADSL.</p>
+    <ul>
+      <li>Débits plus rapides que l'ADSL, mais avec une portée plus courte.</li>
+      <li>Débits typiques : jusqu'à 100 Mbit/s en descendant et 8 Mbit/s en montant pour les lignes les plus courtes (inférieures à 300 mètres).</li>
+      <li>Nécessite une distance plus courte entre le logement et le central téléphonique (moins de 1 km).</li>
+      <li>Adapté pour les besoins de débit plus importants (streaming, jeux en ligne, etc.).</li>
+    </ul>
+  </article>
+    </section>
+
+    <section>
+      <h2>📊 Schéma de la boucle locale</h2>
+      <p>La boucle locale est divisée en 3 segments :</p>
+      <ul>
+        <li><strong>Transport :</strong> entre SR et NRA (câbles multi‑paires de 112 à 1792 paires) .</li>
+        <li><strong>Distribution :</strong> entre SR et PC (câbles de 14 à 224 paires) .</li>
+        <li><strong>Branchement :</strong> câble uni‑paire du PC à l’abonné (ADSL ou fibre terminale) .</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fahamni TT – Tous droits réservés</p>
+    <p id="localTime"></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
