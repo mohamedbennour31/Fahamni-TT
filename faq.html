@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ – Foire aux questions | Fahamni TT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="scrollTopBtn" title="Remonter">⬆</button>
+
+  <header>
+    <button id="darkToggle">🌓 Mode sombre</button>
+    <h1>📡 Fahamni TT</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="reseau.html">Structure du réseau</a></li>
+        <li><a href="pannes.html">Pannes</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="outils.html">Outils</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>❓ Foire Aux Questions (FAQ)</h2>
+      <p>Retrouvez ici les réponses aux questions les plus fréquentes concernant la connexion Internet, les équipements, les pannes et les services Tunisie Telecom.</p>
+    </section>
+
+    <!-- FAQ INTERACTIVE -->
+    <section class="faq">
+      <div class="faq-item">
+        <button class="faq-question">1. Mon modem ne se connecte pas à Internet, que faire ?</button>
+        <div class="faq-answer">
+          <p>Vérifiez que tous les câbles sont correctement branchés. Si le voyant DSL ou Internet est éteint, redémarrez le modem. Si le problème persiste, contactez le support technique.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">2. Comment changer le mot de passe Wi-Fi ?</button>
+        <div class="faq-answer">
+          <p>Connectez-vous à l’interface de gestion du modem (souvent à l’adresse <code>192.168.1.1</code>), puis allez dans les paramètres Wi-Fi. Vous pourrez y modifier le nom du réseau (SSID) et le mot de passe.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">3. Quelle est la différence entre ADSL et VDSL ?</button>
+        <div class="faq-answer">
+          <p>L’ADSL offre une vitesse modérée mais une couverture plus large, tandis que le VDSL est plus rapide mais ne fonctionne que si vous êtes à moins d’un kilomètre du central téléphonique.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">4. Peut-on utiliser un autre modem que celui de Tunisie Telecom ?</button>
+        <div class="faq-answer">
+          <p>Oui, mais il doit être compatible avec la norme ADSL ou VDSL utilisée. Vous devrez aussi configurer manuellement les identifiants PPPoE fournis par TT.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">5. Comment savoir si le problème vient de chez moi ou de Tunisie Telecom ?</button>
+        <div class="faq-answer">
+          <p>Essayez de connecter un autre appareil. Si aucun ne fonctionne, redémarrez le modem. Si les voyants restent éteints ou clignotent anormalement, il est probable que la panne soit du côté de l'opérateur.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">6. Que signifient les voyants de mon modem ?</button>
+        <div class="faq-answer">
+          <ul>
+            <li><strong>Power :</strong> alimentation.</li>
+            <li><strong>DSL / Link :</strong> synchronisation avec la ligne téléphonique.</li>
+            <li><strong>Internet :</strong> connexion au réseau TT.</li>
+            <li><strong>WLAN :</strong> activation du Wi-Fi.</li>
+            <li><strong>LAN :</strong> câbles Ethernet branchés.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">7. Je suis souvent déconnecté en Wi-Fi, pourquoi ?</button>
+        <div class="faq-answer">
+          <p>Cela peut venir d’interférences (réseaux voisins, micro-ondes), d’une mauvaise position du modem ou d’un nombre trop élevé d’appareils connectés. Consultez nos <a href="guides.html">guides Wi-Fi</a> pour optimiser votre réseau.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">8. Dois-je utiliser un filtre ADSL ?</button>
+        <div class="faq-answer">
+          <p>Oui, si vous avez un téléphone fixe branché sur la même ligne. Le filtre empêche les interférences entre Internet et la voix.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">9. Quel est le numéro du support Tunisie Telecom ?</button>
+        <div class="faq-answer">
+          <p>Le numéro peut varier selon les régions. En général, vous pouvez appeler le <strong>71001298</strong> ou vous rendre dans une agence Tunisie Telecom proche de chez vous.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fahamni TT – Tous droits réservés</p>
+    <p id="localTime"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
