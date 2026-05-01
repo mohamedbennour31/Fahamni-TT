@@ -567,7 +567,6 @@ body.dark-mode .contact-support {
   color: #e0e0e0;
 }
 
-/* Fix text everywhere */
 body.dark-mode p,
 body.dark-mode li,
 body.dark-mode span {
@@ -586,4 +585,15 @@ body.dark-mode textarea {
   color: #fff;
   border: 1px solid #555;
 }
-/* Images ou autres éléments si besoin */
+body.dark-mode .panne-item,
+body.dark-mode .panne-item * {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .panne-item {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode .panne-item strong {
+  color: #ffffff;
+}
